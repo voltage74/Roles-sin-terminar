@@ -45,6 +45,8 @@ $mods = (
     "https://mediafilez.forgecdn.net/files/5079/967/tfmg-0.8.0b-1.20.1.jar",
     "https://mediafilez.forgecdn.net/files/4753/168/trashslot-forge-1.20-15.1.0.jar",
     "https://mediafilez.forgecdn.net/files/4985/852/TravelersBackpack-1.20.1-9.1.12.jar",
+    "https://mediafilez.forgecdn.net/files/6020/952/oculus-mc1.20.1-1.8.0.jar",
+    "https://mediafilez.forgecdn.net/files/5910/194/oculus-flywheel-compat-forge1.20.1%2B1.1.4.jar",
     "https://cdn.modrinth.com/data/hWlsli6y/versions/JBS1TJdd/MapFrontiers-1.20.1-2.6.0p1-forge.jar"
 )
 
