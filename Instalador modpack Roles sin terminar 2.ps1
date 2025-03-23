@@ -1,9 +1,9 @@
 ﻿[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
 # Gets the mods from txt on GitHub
-$mods = (Invoke-RestMethod -Uri "https://raw.githubusercontent.com/voltage74/things/refs/heads/main/Roles%20sin%20terminar%202/mods.txt") -split "`n"
+$mods = (Invoke-RestMethod -Uri "https://raw.githubusercontent.com/voltage74/Roles-sin-terminar/refs/heads/main/Roles%20sin%20terminar%202/mods.txt") -split "`n"
 
-$shaders = (Invoke-RestMethod -Uri "https://raw.githubusercontent.com/voltage74/things/refs/heads/main/Roles%20sin%20terminar%202/shaderpacks.txt") -split "`n"
+$shaders = (Invoke-RestMethod -Uri "https://raw.githubusercontent.com/voltage74/Roles-sin-terminar/refs/heads/main/Roles%20sin%20terminar%202/shaderpacks.txt") -split "`n"
 
 # It's the installation folder
 $folder = "$env:APPDATA\.minecraft\worlds\Roles sin terminar 2"
@@ -104,7 +104,7 @@ if ($mods_check -eq "si") {
 if ($scripts_check -eq "si") {
     Write-Host "`nInstalando los scripts" -ForegroundColor "Green"
     check_folder -Directory $directories[1]
-    download_zip -url "https://raw.githubusercontent.com/voltage74/things/refs/heads/main/Roles%20sin%20terminar%202/kubejs.zip"
+    download_zip -url "https://raw.githubusercontent.com/voltage74/Roles-sin-terminar/refs/heads/main/Roles%20sin%20terminar%202/kubejs.zip"
 
     Write-Host "Scripts instalados" -ForegroundColor "Magenta"
 }
