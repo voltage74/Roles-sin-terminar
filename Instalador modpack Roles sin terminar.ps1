@@ -1,5 +1,6 @@
 ﻿[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
+# Gets the mods from txt on GitHub
 $mods = (Invoke-RestMethod -Uri "https://raw.githubusercontent.com/voltage74/things/refs/heads/main/Roles%20sin%20terminar/mods.txt") -split "`n"
 
 $shaders = (Invoke-RestMethod -Uri "https://raw.githubusercontent.com/voltage74/things/refs/heads/main/Roles%20sin%20terminar/shaderpacks.txt") -split "`n"
