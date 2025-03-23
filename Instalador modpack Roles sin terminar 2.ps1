@@ -78,7 +78,7 @@ function answer {
 }
 
 # Get input from the user
-Write-Host "Bienvenido al instalador del modpack de Roles sin terminar 3" 
+Write-Host "Bienvenido al instalador del modpack de Roles sin terminar 2" 
 Write-Host "Recuerda que se eliminarán todos los archivos de las carpetas que actualices y se pondrán los nuevos archivos`n" -ForegroundColor "DarkRed"
 
 Write-Host "¿Quieres instalar los mods? (Si/No)"
