@@ -4,7 +4,7 @@ $mods = (Invoke-RestMethod -Uri "https://raw.githubusercontent.com/voltage74/Rol
 
 $weapons = (Invoke-RestMethod -Uri "https://raw.githubusercontent.com/voltage74/Roles-sin-terminar/refs/heads/main/Roles%20sin%20terminar%203/weapons.txt") -split "`n"
 
-$shaders = (Invoke-RestMethod -Uri "https://raw.githubusercontent.com/voltage74/Roles-sin-terminar/refs/heads/main/Roles%20sin%20terminar%203/shaders.txt") -split "`n"
+$shaders = (Invoke-RestMethod -Uri "https://raw.githubusercontent.com/voltage74/Roles-sin-terminar/refs/heads/main/Roles%20sin%20terminar%203/shaderpacks.txt") -split "`n"
 
 # It's the installation folder
 $folder = "$env:APPDATA\.minecraft\worlds\Roles sin terminar 3"
