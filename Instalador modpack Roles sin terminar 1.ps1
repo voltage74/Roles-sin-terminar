@@ -1,9 +1,9 @@
 ﻿[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
 # Gets the mods from txt on GitHub
-$mods = (Invoke-RestMethod -Uri "https://raw.githubusercontent.com/voltage74/Roles-sin-terminar/refs/heads/main/Roles%20sin%20terminar/mods.txt") -split "`n"
+$mods = (Invoke-RestMethod -Uri "https://raw.githubusercontent.com/voltage74/Roles-sin-terminar/refs/heads/main/Roles%20sin%20terminar%201/mods.txt") -split "`n"
 
-$shaders = (Invoke-RestMethod -Uri "https://raw.githubusercontent.com/voltage74/Roles-sin-terminar/refs/heads/main/Roles%20sin%20terminar/shaderpacks.txt") -split "`n"
+$shaders = (Invoke-RestMethod -Uri "https://raw.githubusercontent.com/voltage74/Roles-sin-terminar/refs/heads/main/Roles%20sin%20terminar%201/shaderpacks.txt") -split "`n"
 
 # It's the installation folder
 $folder = "$env:APPDATA\.minecraft\worlds\Roles sin terminar"
