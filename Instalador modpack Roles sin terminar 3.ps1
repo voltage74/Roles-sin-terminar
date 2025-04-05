@@ -14,6 +14,7 @@ $directories = (
     "$folder\kubejs", 
     "$folder\tacz",
     "$folder\shaderpacks",
+    "$folder\resourcepacks",
     "$folder\journeymap\data\mp"
 )
 
@@ -103,12 +104,15 @@ $weapons_check = answer
 Write-Host "`n¿Quieres instalar los shaders? (Si/No)"
 $shaders_check = answer
 
+Write-Host "`n¿Quieres instalar los paquetes de recursos? (Por ejemplo, que las orugas de un tanque sean de metal)"
+$resource_packs_check = answer
+
 Write-Host "`n¿Quieres instalar el mapa? (Si/No)"
 Write-Host "ES NECESARIO HABER ENTRADO AL SERVIDOR AL MENOS UNA VEZ PARA INSTALARLO"
 $map_check = answer
 
 # Installs mods
-if ($mods_check -eq "si") {
+if ($mods_check -eq "si"){
     # It checks the URL's from the mod array and downloads it
     Write-Host "`nInstalando los mods:" -ForegroundColor "Green"
     check_folder -Directory $directories[0]
@@ -118,7 +122,7 @@ if ($mods_check -eq "si") {
 }
 
 # Installs scripts
-if ($scripts_check -eq "si") {
+if ($scripts_check -eq "si"){
     Write-Host "`nInstalando los scripts" -ForegroundColor "Green"
     check_folder -Directory $directories[1]
     download_zip -url "https://raw.githubusercontent.com/voltage74/things/refs/heads/main/Roles%20sin%20terminar%203/kubejs.zip"
@@ -127,7 +131,7 @@ if ($scripts_check -eq "si") {
 }
 
 # Installs weapons
-if ($weapons_check -eq "si") {
+if ($weapons_check -eq "si"){
     Write-Host "`nInstalando las armas" -ForegroundColor "Green"
     check_folder -Directory $directories[2]
     download_zip -url "https://raw.githubusercontent.com/voltage74/things/refs/heads/main/Roles%20sin%20terminar%203/weapons.zip"
@@ -137,12 +141,20 @@ if ($weapons_check -eq "si") {
 }
 
 # Installs shaders
-if ($shaders_check -eq "si") {
+if ($shaders_check -eq "si"){
     Write-Host "`nInstalando los shaders:" -ForegroundColor "Green"
     check_folder -Directory $directories[3]
     download_url_array -file_url_array $shaders -directory $directories[3] -write_name "y"
 
     Write-Host "`nShaders instalados" -ForegroundColor "Magenta"
+}
+
+if ($resource_packs_check -eq "si"){
+    Write-Host "`nInstalando los paquetes de recursos" -ForegroundColor "Green"
+    check_folder -Directory $directories[4]
+    download_zip -url "https://raw.githubusercontent.com/voltage74/Roles-sin-terminar/refs/heads/main/Roles%20sin%20terminar%203/resourcepacks.zip"
+
+    Write-Host "`nPaquetes de recursos instalados" -ForegroundColor "Magenta"
 }
 
 # Installs the map
@@ -160,7 +172,7 @@ if ($map_check -eq "si"){
     # Checks if the JourneyMap folder is created
     while (-not $map_folder_found){
         $Error.Clear()
-        $map_folder = Get-ChildItem -Path $directories[4] -Directory -ErrorAction SilentlyContinue| 
+        $map_folder = Get-ChildItem -Path $directories[5] -Directory -ErrorAction SilentlyContinue| 
                       Where-Object {$_.Name -like "*_4b0d4fe6~814b~48b8~8f1e~152eeba72cee*"}
         
         if ($error -or (-not $map_folder)) {
@@ -190,11 +202,11 @@ if ($map_check -eq "si"){
     
     # Deletes the old folder to avoid corruptions
     foreach ($directory in $journeymap_directories){
-        check_folder -Directory "$($directories[4])\$map_folder\overworld\$directory"
+        check_folder -Directory "$($directories[5])\$map_folder\overworld\$directory"
     }
 
     # Extracts the zip and deletes it
-    Expand-Archive -Path "$HOME\Downloads\mapa.zip" -DestinationPath "$($directories[4])\$map_folder" -Force
+    Expand-Archive -Path "$HOME\Downloads\mapa.zip" -DestinationPath "$($directories[5])\$map_folder" -Force
     Remove-Item -Path "$HOME\Downloads\mapa.zip" -Recurse -Force
 
     Write-Host "Mapa instalado" -ForegroundColor "Magenta"
