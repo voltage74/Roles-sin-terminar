@@ -80,7 +80,6 @@ https://mediafilez.forgecdn.net/files/6355/861/entityculling-forge-1.7.4-mc1.20.
 https://mediafilez.forgecdn.net/files/5531/397/farsight-1.20.1-3.7.jar
 https://mediafilez.forgecdn.net/files/4810/975/ferritecore-6.0.1-forge.jar
 https://mediafilez.forgecdn.net/files/6312/293/ImmediatelyFast-Forge-1.5.0%2B1.20.4.jar
-https://mediafilez.forgecdn.net/files/6125/143/modernfix-forge-5.20.2%2Bmc1.20.1.jar
 https://mediafilez.forgecdn.net/files/6201/294/no-telemetry-1.9.0.jar
 https://mediafilez.forgecdn.net/files/5706/69/radium-mc1.20.1-0.12.4%2Bgit.26c9d8e.jar
 https://mediafilez.forgecdn.net/files/4631/193/starlight-1.1.2%2Bforge.1cda73c.jar
