@@ -52,7 +52,7 @@ https://mediafilez.forgecdn.net/files/6087/14/createrailwaysnavigator-forge-1.20
 https://mediafilez.forgecdn.net/files/5840/17/Steam_Rails-1.6.7%2Bforge-mc1.20.1.jar
 https://mediafilez.forgecdn.net/files/5811/638/tfmg-0.9.3-1.20.1.jar
 https://mediafilez.forgecdn.net/files/5206/625/create_tweaked_controllers-1.20.1-1.2.4.jar
-https://mediafilez.forgecdn.net/files/6252/666/petrolsparts-1.20.1-1.1.5.jar
+https://mediafilez.forgecdn.net/files/6110/215/petrolsparts-1.20.1-1.1.3.jar
 https://mediafilez.forgecdn.net/files/6266/282/TConstruct-1.20.1-3.9.2.37.jar
 https://mediafilez.forgecdn.net/files/5914/893/ad_astra-forge-1.20.1-1.15.19.jar
 https://mediafilez.forgecdn.net/files/5580/456/clockwork-1.20.1-0.1.16-forge-b3b22e39fe.jar
@@ -115,7 +115,7 @@ https://mediafilez.forgecdn.net/files/5787/839/GlitchCore-forge-1.20.1-0.0.1.1.j
 https://mediafilez.forgecdn.net/files/5402/61/kotlinforforge-4.11.0-all.jar
 https://mediafilez.forgecdn.net/files/6258/424/Mantle-1.20.1-1.11.44.jar
 https://github.com/Mod-Sauce/OtyacraftEngineRenewed/releases/download/3.7.0-alpha7/otyacraftengine-forge-mc1.20.1-3.7.0-alpha.7.jar
-https://mediafilez.forgecdn.net/files/6252/654/petrolpark-1.20.1-1.4.2-all.jar
+https://mediafilez.forgecdn.net/files/6174/634/petrolpark-1.20.1-1.4.1-all.jar
 https://mediafilez.forgecdn.net/files/6231/176/resourcefulconfig-forge-1.20.1-2.1.3.jar
 https://mediafilez.forgecdn.net/files/5659/871/resourcefullib-forge-1.20.1-2.1.29.jar
 https://mediafilez.forgecdn.net/files/6186/971/rhino-forge-2001.2.3-build.10.jar
