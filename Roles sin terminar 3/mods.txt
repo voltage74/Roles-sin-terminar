@@ -115,6 +115,7 @@ https://mediafilez.forgecdn.net/files/6333/474/geckolib-forge-1.20.1-4.7.1.2.jar
 https://mediafilez.forgecdn.net/files/5787/839/GlitchCore-forge-1.20.1-0.0.1.1.jar
 https://mediafilez.forgecdn.net/files/5402/61/kotlinforforge-4.11.0-all.jar
 https://mediafilez.forgecdn.net/files/6258/424/Mantle-1.20.1-1.11.44.jar
+https://github.com/Mod-Sauce/OtyacraftEngineRenewed/releases/download/3.7.0-alpha7/otyacraftengine-forge-mc1.20.1-3.7.0-alpha.7.jar
 https://mediafilez.forgecdn.net/files/6252/654/petrolpark-1.20.1-1.4.2-all.jar
 https://mediafilez.forgecdn.net/files/6231/176/resourcefulconfig-forge-1.20.1-2.1.3.jar
 https://mediafilez.forgecdn.net/files/5659/871/resourcefullib-forge-1.20.1-2.1.29.jar
