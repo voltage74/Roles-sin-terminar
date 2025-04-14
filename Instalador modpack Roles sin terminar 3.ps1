@@ -53,7 +53,7 @@ function download_url_array {
             Write-Host $file_decoded_name -ForegroundColor "Cyan"
         }
 
-        Start-BitsTransfer -Source $file_url -Destination "$directory\$file_decoded_name" -Priority High
+        curl.exe -s -L -o "$directory\$file_decoded_name" $file_url
     }
 }
 
@@ -66,7 +66,7 @@ function download_zip {
     $file_name = $url.Split('/')[-1]
     $installations_folder = "$env:APPDATA\.minecraft\worlds"
 
-    Start-BitsTransfer -Source $url -Destination $installations_folder -Priority High
+    curl.exe -s -L -o "$installations_folder\$file_name" $url
     Expand-Archive -Path "$installations_folder\$file_name" -DestinationPath $folder -Force
     Remove-Item -Path "$installations_folder\$file_name" -Recurse -Force
 }
@@ -154,7 +154,7 @@ if ($resource_packs_check -eq "si"){
     check_folder -Directory $directories[4]
     download_zip -url "https://raw.githubusercontent.com/voltage74/Roles-sin-terminar/refs/heads/main/Roles%20sin%20terminar%203/resourcepacks.zip"
 
-    Write-Host "`nPaquetes de recursos instalados" -ForegroundColor "Magenta"
+    Write-Host "Paquetes de recursos instalados" -ForegroundColor "Magenta"
 }
 
 # Installs the map

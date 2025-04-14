@@ -41,7 +41,7 @@ function download_url_array {
             Write-Host $file_decoded_name -ForegroundColor "Cyan"
         }
 
-        Start-BitsTransfer -Source $file_url -Destination "$directory\$file_decoded_name" -Priority High
+        curl.exe -s -L -o "$directory\$file_decoded_name" $file_url
     }
 }
 

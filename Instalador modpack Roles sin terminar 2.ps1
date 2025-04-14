@@ -42,7 +42,7 @@ function download_url_array {
             Write-Host $file_decoded_name -ForegroundColor "Cyan"
         }
 
-        Start-BitsTransfer -Source $file_url -Destination "$directory\$file_decoded_name" -Priority High
+        curl.exe -s -L -o "$directory\$file_decoded_name" $file_url
     }
 }
 
@@ -55,7 +55,7 @@ function download_zip {
     $file_name = $url.Split('/')[-1]
     $installations_folder = "$env:APPDATA\.minecraft\worlds"
 
-    Start-BitsTransfer -Source $url -Destination $installations_folder -Priority High
+    curl.exe -s -L -o "$installations_folder\$file_name" $url
     Expand-Archive -Path "$installations_folder\$file_name" -DestinationPath $folder -Force
     Remove-Item -Path "$installations_folder\$file_name" -Recurse -Force
 }
