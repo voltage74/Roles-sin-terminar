@@ -2,6 +2,7 @@ https://mediafilez.forgecdn.net/files/5698/791/alexsmobs-1.22.9.jar
 https://mediafilez.forgecdn.net/files/5899/696/camera-forge-1.20.1-1.0.19.jar
 https://mediafilez.forgecdn.net/files/6008/907/easy_npc-forge-1.20.1-5.9.0.jar
 https://mediafilez.forgecdn.net/files/6354/624/friendsandfoes-forge-mc1.20.1-3.0.9.jar
+https://github.com/Mod-Sauce/IamMusicPlayer_FIX/releases/download/alpha.8.pre1/iammusicplayer_renewed-forge-mc1.20-3.22.0-alpha.8pre1.jar
 https://mediafilez.forgecdn.net/files/5355/594/iammusicplayer-forge-mc1.20-3.22.0-alpha.5.jar
 https://mediafilez.forgecdn.net/files/5853/326/kubejs-forge-2001.6.5-build.16.jar
 https://mediafilez.forgecdn.net/files/4884/96/kubejs-create-forge-2001.2.5-build.2.jar
@@ -60,6 +61,8 @@ https://mediafilez.forgecdn.net/files/6224/8/drivebywire-1.20.1-0.0.10.jar
 https://mediafilez.forgecdn.net/files/5321/630/eureka-1201-1.5.1-beta.3.jar
 https://mediafilez.forgecdn.net/files/6316/345/immersive_aircraft-1.2.2%2B1.20.1-forge.jar
 https://mediafilez.forgecdn.net/files/6158/89/trackwork-1.20.1-1.1.1b.jar
+https://cdn.discordapp.com/attachments/1237370384819425290/1344733680928821359/valkyrienskies-120-2.3.0-beta.5tt196b0ae4620f.jar?ex=67fdf895&is=67fca715&hm=c91e528af00de2df4bfce0c47de4685e998e99ce12e849946b8990eb87cad328&
+https://cdn.modrinth.com/data/qS1ot7R2/versions/FM7dnwSg/VMod-Forge-1.20.1-0.1.3.jar
 https://mediafilez.forgecdn.net/files/6351/716/artifacts-forge-9.5.15.jar
 https://mediafilez.forgecdn.net/files/4882/500/carryon-forge-1.20.1-2.1.2.7.jar
 https://mediafilez.forgecdn.net/files/5792/26/ChatShot%20%281.20-1.20.4-forge%29-1.0.4.jar
@@ -86,6 +89,7 @@ https://mediafilez.forgecdn.net/files/5531/397/farsight-1.20.1-3.7.jar
 https://mediafilez.forgecdn.net/files/4810/975/ferritecore-6.0.1-forge.jar
 https://mediafilez.forgecdn.net/files/6200/71/GPUTape-1.18x-1.21x-1.0.5.1-forge.jar
 https://mediafilez.forgecdn.net/files/6312/293/ImmediatelyFast-Forge-1.5.0%2B1.20.4.jar
+https://cdn.modrinth.com/data/NRjRiSSD/versions/3w0IxNtk/memoryleakfix-forge-1.17%2B-1.1.5.jar
 https://mediafilez.forgecdn.net/files/6201/294/no-telemetry-1.9.0.jar
 https://mediafilez.forgecdn.net/files/5706/69/radium-mc1.20.1-0.12.4%2Bgit.26c9d8e.jar
 https://mediafilez.forgecdn.net/files/5093/785/saturn-mc1.20.1-0.1.3.jar
@@ -117,6 +121,3 @@ https://mediafilez.forgecdn.net/files/5659/871/resourcefullib-forge-1.20.1-2.1.2
 https://mediafilez.forgecdn.net/files/6186/971/rhino-forge-2001.2.3-build.10.jar
 https://mediafilez.forgecdn.net/files/6384/986/sophisticatedcore-1.20.1-1.2.38.936.jar
 https://mediafilez.forgecdn.net/files/6290/448/TerraBlender-forge-1.20.1-3.0.1.10.jar
-https://cdn.modrinth.com/data/NRjRiSSD/versions/3w0IxNtk/memoryleakfix-forge-1.17%2B-1.1.5.jar
-https://cdn.modrinth.com/data/qS1ot7R2/versions/FM7dnwSg/VMod-Forge-1.20.1-0.1.3.jar
-https://raw.githubusercontent.com/voltage74/Roles-sin-terminar/refs/heads/main/Roles%20sin%20terminar%203/valkyrienskies-120-2.3.0-beta.5tt19%2B6b0ae4620f.jar
