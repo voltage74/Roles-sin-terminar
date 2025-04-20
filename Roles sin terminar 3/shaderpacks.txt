@@ -1,5 +1,3 @@
-https://mediafilez.forgecdn.net/files/6020/952/oculus-mc1.20.1-1.8.0.jar
-https://mediafilez.forgecdn.net/files/5910/194/oculus-flywheel-compat-forge1.20.1%2B1.1.4.jar
 https://mediafilez.forgecdn.net/files/6137/622/ComplementaryUnbound_r5.4.zip
 https://mediafilez.forgecdn.net/files/6137/620/ComplementaryReimagined_r5.4.zip
 https://cdn.modrinth.com/data/lLqFfGNs/versions/6FdrBtKp/photon_v1.1.zip
