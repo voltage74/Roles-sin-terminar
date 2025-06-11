@@ -35,7 +35,7 @@ function check_folder {
     if (Test-Path -Path $Directory) {
         Remove-Item -Path $Directory -Recurse -Force
     }
-    mkdir $Directory | Out-Null
+    mkdir $Directory -Force | Out-Null
 }
 
 # It downloads the url array
@@ -164,15 +164,16 @@ if ($resource_packs_check -eq "si"){
 if ($macros_check -eq "si"){
     Write-Host "`nInstalando los macros" -ForegroundColor "Green"
     Remove-Item -Path "$($directories[5])\commandkeys.json" -ErrorAction SilentlyContinue
-    curl.exe -s -L -o $directories[5] "https://raw.githubusercontent.com/voltage74/Roles-sin-terminar/refs/heads/main/Roles%20sin%20terminar%203/commandkeys.json"
+    mkdir $directories[5] -Force | Out-Null
 
+    curl.exe -s -L -o "$($directories[5])\commandkeys.json" "https://raw.githubusercontent.com/voltage74/Roles-sin-terminar/refs/heads/main/Roles%20sin%20terminar%203/commandkeys.json"
     Write-Host "Macros instalados" -ForegroundColor "Magenta"
 }
 
 # Installs the map
 if ($map_check -eq "si"){
-    Write-Host "Instalación del mapa:" -ForegroundColor "Green"
-    Write-Host "`nPara instalar el mapa, será necesario descargarlo manualmente EN LA CARPETA 'DESCARGAS'"
+    Write-Host "`nInstalación del mapa:" -ForegroundColor "Green"
+    Write-Host "Para instalar el mapa, será necesario descargarlo manualmente EN LA CARPETA 'DESCARGAS'"
     Write-Host "El enlace a la carpeta de Google Drive es: https://bit.ly/rolesinterminar3-full-map, haz Ctrl+Click para abrirlo"
     Write-Host "`nTambién es necesario haber entrado al servidor al menos una vez"
     Write-Host "Cuando hayas hecho esto, presiona Enter"
@@ -218,7 +219,7 @@ if ($map_check -eq "si"){
     }
 
     # Extracts the zip and deletes it
-    Expand-Archive -Path "$HOME\Downloads\mapa.zip" -DestinationPath "$($directories[5])\$map_folder" -Force
+    Expand-Archive -Path "$HOME\Downloads\mapa.zip" -DestinationPath "$($directories[6])\$map_folder" -Force
     Remove-Item -Path "$HOME\Downloads\mapa.zip" -Recurse -Force
 
     Write-Host "Mapa instalado" -ForegroundColor "Magenta"
