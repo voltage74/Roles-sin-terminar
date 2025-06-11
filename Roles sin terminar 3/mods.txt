@@ -70,6 +70,7 @@ https://mediafilez.forgecdn.net/files/6351/716/artifacts-forge-9.5.15.jar
 https://mediafilez.forgecdn.net/files/5462/438/better_creative_tabs-0.0.2.jar
 https://mediafilez.forgecdn.net/files/4882/500/carryon-forge-1.20.1-2.1.2.7.jar
 https://mediafilez.forgecdn.net/files/5792/26/ChatShot%20%281.20-1.20.4-forge%29-1.0.4.jar
+https://mediafilez.forgecdn.net/files/6366/439/commandkeys-forge-2.3.9%2B1.20.1.jar
 https://mediafilez.forgecdn.net/files/6414/384/tombstone-1.20.1-8.9.4.jar
 https://mediafilez.forgecdn.net/files/5887/734/create_jetpack_curios-1.2.0-forge-1.20.1.jar
 https://mediafilez.forgecdn.net/files/6347/731/essential_1-3-5-11_forge_1-20-1.jar
