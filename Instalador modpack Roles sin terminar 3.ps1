@@ -1,31 +1,5 @@
 ﻿[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
-$mods = (Invoke-RestMethod -Uri "https://raw.githubusercontent.com/voltage74/Roles-sin-terminar/refs/heads/main/Roles%20sin%20terminar%203/mods.txt") -split "`n"
-
-$weapons = (Invoke-RestMethod -Uri "https://raw.githubusercontent.com/voltage74/Roles-sin-terminar/refs/heads/main/Roles%20sin%20terminar%203/weapons.txt") -split "`n"
-
-$shaders = (Invoke-RestMethod -Uri "https://raw.githubusercontent.com/voltage74/Roles-sin-terminar/refs/heads/main/Roles%20sin%20terminar%203/shaderpacks.txt") -split "`n"
-
-# It's the installation folder
-$folder = "$env:APPDATA\.minecraft\worlds\Roles sin terminar 3"
-
-$directories = (
-    "$folder\mods", 
-    "$folder\kubejs", 
-    "$folder\tacz",
-    "$folder\shaderpacks",
-    "$folder\resourcepacks",
-    "$folder\config",
-    "$folder\journeymap\data\mp"
-)
-
-$journeymap_directories = (
-    "day",
-    "night",
-    "topo",
-    "biome"
-)
-
 # It deletes the folder if it exists and makes a new one
 function check_folder {
     param (
@@ -89,34 +63,62 @@ function answer {
     return $answer
 }
 
+$mods = (Invoke-RestMethod -Uri "https://raw.githubusercontent.com/voltage74/Roles-sin-terminar/refs/heads/main/Roles%20sin%20terminar%203/mods.txt") -split "`n"
+
+$weapons = (Invoke-RestMethod -Uri "https://raw.githubusercontent.com/voltage74/Roles-sin-terminar/refs/heads/main/Roles%20sin%20terminar%203/weapons.txt") -split "`n"
+
+$shaders = (Invoke-RestMethod -Uri "https://raw.githubusercontent.com/voltage74/Roles-sin-terminar/refs/heads/main/Roles%20sin%20terminar%203/shaderpacks.txt") -split "`n"
+
+# It's the installation folder
+$folder = "$env:APPDATA\.minecraft\worlds\Roles sin terminar 3"
+
+$directories = (
+    "$folder\mods", 
+    "$folder\kubejs", 
+    "$folder\tacz",
+    "$folder\shaderpacks",
+    "$folder\resourcepacks",
+    "$folder\config",
+    "$folder\journeymap\data\mp"
+)
+
+$journeymap_directories = (
+    "day",
+    "night",
+    "topo",
+    "biome"
+)
+
+$checks = ("no", "no", "no", "no", "no", "no", "no")
+
 # Get input from the user
 Write-Host "Bienvenido al instalador del modpack de Roles sin terminar 3" 
 Write-Host "Recuerda que se eliminarán todos los archivos de las carpetas que actualices y se pondrán los nuevos archivos`n" -ForegroundColor "DarkRed"
 
 Write-Host "¿Quieres instalar los mods? (Si/No)"
-$mods_check = answer
+$checks[0] = answer
 
 Write-Host "`n¿Quieres instalar los scripts? (Si/No)"
-$scripts_check = answer
+$checks[1] = answer
 
 Write-Host "`n¿Quieres instalar las armas? (Si/No)"
-$weapons_check = answer
+$checks[2] = answer
 
 Write-Host "`n¿Quieres instalar los shaders? (Si/No)"
-$shaders_check = answer
+$checks[3] = answer
 
 Write-Host "`n¿Quieres instalar los paquetes de recursos? (Por ejemplo, que las orugas de un tanque sean de metal) (Si/No)"
-$resource_packs_check = answer
+$checks[4] = answer
 
-Write-Host "`n¿Quieres instalar las macros? (Si/No)"
-$macros_check = answer
+Write-Host "`n¿Quieres instalar los macros? (Si/No)"
+$checks[5] = answer
 
 Write-Host "`n¿Quieres instalar el mapa? (Si/No)"
 Write-Host "ES NECESARIO HABER ENTRADO AL SERVIDOR AL MENOS UNA VEZ PARA INSTALARLO"
-$map_check = answer
+$checks[6] = answer
 
 # Installs mods
-if ($mods_check -eq "si"){
+if ($checks[0] -eq "si"){
     # It checks the URL's from the mod array and downloads it
     Write-Host "`nInstalando los mods:" -ForegroundColor "Green"
     check_folder -Directory $directories[0]
@@ -126,7 +128,7 @@ if ($mods_check -eq "si"){
 }
 
 # Installs scripts
-if ($scripts_check -eq "si"){
+if ($checks[1] -eq "si"){
     Write-Host "`nInstalando los scripts" -ForegroundColor "Green"
     check_folder -Directory $directories[1]
     download_zip -url "https://raw.githubusercontent.com/voltage74/things/refs/heads/main/Roles%20sin%20terminar%203/kubejs.zip"
@@ -135,7 +137,7 @@ if ($scripts_check -eq "si"){
 }
 
 # Installs weapons
-if ($weapons_check -eq "si"){
+if ($checks[2] -eq "si"){
     Write-Host "`nInstalando las armas" -ForegroundColor "Green"
     check_folder -Directory $directories[2]
     download_zip -url "https://raw.githubusercontent.com/voltage74/things/refs/heads/main/Roles%20sin%20terminar%203/weapons.zip"
@@ -145,7 +147,7 @@ if ($weapons_check -eq "si"){
 }
 
 # Installs shaders
-if ($shaders_check -eq "si"){
+if ($checks[3] -eq "si"){
     Write-Host "`nInstalando los shaders:" -ForegroundColor "Green"
     check_folder -Directory $directories[3]
     download_url_array -file_url_array $shaders -directory $directories[3] -write_name "y"
@@ -153,7 +155,8 @@ if ($shaders_check -eq "si"){
     Write-Host "`nShaders instalados" -ForegroundColor "Magenta"
 }
 
-if ($resource_packs_check -eq "si"){
+# Installs resource packs
+if ($checks[4] -eq "si"){
     Write-Host "`nInstalando los paquetes de recursos" -ForegroundColor "Green"
     check_folder -Directory $directories[4]
     download_zip -url "https://raw.githubusercontent.com/voltage74/Roles-sin-terminar/refs/heads/main/Roles%20sin%20terminar%203/resourcepacks.zip"
@@ -161,7 +164,8 @@ if ($resource_packs_check -eq "si"){
     Write-Host "Paquetes de recursos instalados" -ForegroundColor "Magenta"
 }
 
-if ($macros_check -eq "si"){
+# Installs macros
+if ($checks[5] -eq "si"){
     Write-Host "`nInstalando los macros" -ForegroundColor "Green"
     Remove-Item -Path "$($directories[5])\commandkeys.json" -ErrorAction SilentlyContinue
     mkdir $directories[5] -Force | Out-Null
@@ -171,7 +175,7 @@ if ($macros_check -eq "si"){
 }
 
 # Installs the map
-if ($map_check -eq "si"){
+if ($checks[6] -eq "si"){
     Write-Host "`nInstalación del mapa:" -ForegroundColor "Green"
     Write-Host "Para instalar el mapa, será necesario descargarlo manualmente EN LA CARPETA 'DESCARGAS'"
     Write-Host "El enlace a la carpeta de Google Drive es: https://bit.ly/rolesinterminar3-full-map, haz Ctrl+Click para abrirlo"
