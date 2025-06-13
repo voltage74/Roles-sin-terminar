@@ -90,7 +90,6 @@ https://mediafilez.forgecdn.net/files/5278/538/Clumps-forge-1.20.1-12.0.0.4.jar
 https://mediafilez.forgecdn.net/files/6229/159/connectivity-1.20.1-7.1.jar
 https://mediafilez.forgecdn.net/files/5681/725/embeddium-0.3.31%2Bmc1.20.1.jar
 https://mediafilez.forgecdn.net/files/6355/861/entityculling-forge-1.7.4-mc1.20.1.jar
-https://mediafilez.forgecdn.net/files/5531/397/farsight-1.20.1-3.7.jar
 https://mediafilez.forgecdn.net/files/4810/975/ferritecore-6.0.1-forge.jar
 https://mediafilez.forgecdn.net/files/6200/71/GPUTape-1.18x-1.21x-1.0.5.1-forge.jar
 https://mediafilez.forgecdn.net/files/6312/293/ImmediatelyFast-Forge-1.5.0%2B1.20.4.jar
